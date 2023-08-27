@@ -370,7 +370,7 @@ func New() (e *Echo) {
 		Logger:          log.New("echo"),
 		colorer:         color.New(),
 		maxParam:        new(int),
-		ListenerNetwork: "tcp",
+		ListenerNetwork: "tcp4",
 	}
 	e.Server.Handler = e
 	e.TLSServer.Handler = e
